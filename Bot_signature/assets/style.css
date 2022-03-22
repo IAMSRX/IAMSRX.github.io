@@ -68,15 +68,41 @@ body .card {
   transform-style: preserve-3d;
 }
 body .card .welcome {
-  transform: translateZ(20px);
+  transform: translateZ(10px);
 }
-body .card .text {
+body .card {
   font-size: 1em;
 }
-body .card .text span {
+body .card span {
   display: block;
   transform: translateZ(40px);
+  text-align: center;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
+
+body .card .logo {
+  right: 15px;
+  top: 15px;
+  position: absolute;
+  width: auto;
+  height: 40px;
+}
+
+body .card:hover .mainSpan{
+  opacity: .2;
+}
+
+.hoverSpan{
+  opacity:0;
+}
+
+body .card:hover .hoverSpan{
+  opacity: 1;
+}
+
 
 @font-face {
   font-family: "Dana";
